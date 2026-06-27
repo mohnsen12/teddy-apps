@@ -25,10 +25,16 @@
     }
   ],
   "schedule": {
-    "days": ["monday", "thursday", "saturday"],
+    "days": [
+      "monday",
+      "thursday",
+      "saturday"
+    ],
     "frequency": "3x/week"
   },
   "posted": [],
   "pending_approval": [],
-  "topics_used": []
+  "topics_used": [
+    "integrationer"
+  ]
 }

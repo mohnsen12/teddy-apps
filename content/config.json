@@ -1,0 +1,34 @@
+{
+  "brand": "Teddy Apps",
+  "tagline": "Vi får Business Central til at arbejde for din virksomhed!",
+  "audience": "Danske SMB'er der bruger Business Central",
+  "language": "da",
+  "tone": "70% edukativ, 30% soft CTA",
+  "services": [
+    {
+      "id": "integrationer",
+      "name": "Integrationer",
+      "icon": "🔌",
+      "description": "Synkroniser BC med webshop, CRM, bank og andre systemer"
+    },
+    {
+      "id": "bc-apps",
+      "name": "Custom BC Apps",
+      "icon": "📱",
+      "description": "Skræddersyede apps og extensions til Business Central"
+    },
+    {
+      "id": "php-web",
+      "name": "PHP & Web",
+      "icon": "🌐",
+      "description": "Hjemmesider, webshops og portaler integreret med BC"
+    }
+  ],
+  "schedule": {
+    "days": ["monday", "thursday", "saturday"],
+    "frequency": "3x/week"
+  },
+  "posted": [],
+  "pending_approval": [],
+  "topics_used": []
+}

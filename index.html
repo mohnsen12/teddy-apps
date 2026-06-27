@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teddy Apps — Vi får Business Central til at arbejde for din virksomhed</title>
+    <meta name="description" content="Custom Business Central apps, integrationer og PHP-løsninger. Vi får Business Central til at arbejde for din virksomhed!">
+    <meta name="keywords" content="Business Central, BC apps, integrationer, PHP, Microsoft Dynamics, Danmark">
+    <meta property="og:title" content="Teddy Apps — Business Central Specialister">
+    <meta property="og:description" content="Custom BC apps, integrationer og PHP-løsninger til din virksomhed.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="da_DK">
+    <style>
+        :root {
+            --bg: #0a0a0a;
+            --bg-secondary: #121212;
+            --bg-card: #181818;
+            --text: #fafafa;
+            --text-muted: #8b8b8b;
+            --accent: #ff6b35;
+            --accent-hover: #ff8555;
+            --border: #2a2a2a;
+            --max-width: 1100px;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Grain overlay */
+        body::before {
+            content: '';
+            position: fixed;
+            inset: 0;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' /%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+            pointer-events: none;
+            z-index: 9999;
+            opacity: 0.4;
+        }
+
+        /* Gradient glow */
+        .glow {
+            position: fixed;
+            top: -300px;
+            right: -200px;
+            width: 800px;
+            height: 800px;
+            background: radial-gradient(circle, rgba(255,107,53,0.08) 0%, transparent 70%);
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .glow-2 {
+            position: fixed;
+            bottom: -200px;
+            left: -300px;
+            width: 700px;
+            height: 700px;
+            background: radial-gradient(circle, rgba(56,130,246,0.05) 0%, transparent 70%);
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 24px;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Nav */
+        nav {
+            padding: 24px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .logo span { color: var(--accent); }
+
+        .nav-links {
+            display: flex;
+            gap: 32px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 15px;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover { color: var(--text); }
+
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+        }
+
+        /* Hero */
+        .hero {
+            padding: 80px 0 100px;
+            text-align: center;
+        }
+
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255,107,53,0.1);
+            border: 1px solid rgba(255,107,53,0.3);
+            color: var(--accent);
+            padding: 8px 18px;
+            border-radius: 100px;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 32px;
+        }
+
+        .badge::before {
+            content: '';
+            width: 8px;
+            height: 8px;
+            background: var(--accent);
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.4; }
+        }
+
+        .hero h1 {
+            font-size: clamp(36px, 6vw, 68px);
+            font-weight: 800;
+            letter-spacing: -2px;
+            line-height: 1.1;
+            margin-bottom: 24px;
+        }
+
+        .hero h1 .accent {
+            color: var(--accent);
+        }
+
+        .hero p {
+            font-size: clamp(16px, 2vw, 20px);
+            color: var(--text-muted);
+            max-width: 600px;
+            margin: 0 auto 40px;
+        }
+
+        .cta-group {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 14px 32px;
+            border-radius: 12px;
+            font-size: 16px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.2s;
+            cursor: pointer;
+            border: none;
+        }
+
+        .btn-primary {
+            background: var(--accent);
+            color: #fff;
+        }
+
+        .btn-primary:hover {
+            background: var(--accent-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(255,107,53,0.3);
+        }
+
+        .btn-secondary {
+            background: var(--bg-card);
+            color: var(--text);
+            border: 1px solid var(--border);
+        }
+
+        .btn-secondary:hover {
+            border-color: var(--text-muted);
+        }
+
+        /* Services */
+        .services {
+            padding: 80px 0;
+        }
+
+        .section-title {
+            font-size: clamp(28px, 4vw, 44px);
+            font-weight: 800;
+            letter-spacing: -1px;
+            text-align: center;
+            margin-bottom: 16px;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 18px;
+            margin-bottom: 56px;
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        @media (max-width: 768px) {
+            .service-grid { grid-template-columns: 1fr; }
+        }
+
+        .service-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 40px 32px;
+            transition: all 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: var(--accent);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.3s;
+        }
+
+        .service-card:hover {
+            border-color: rgba(255,107,53,0.3);
+            transform: translateY(-4px);
+        }
+
+        .service-card:hover::before { transform: scaleX(1); }
+
+        .service-icon {
+            font-size: 40px;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .service-card h3 {
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            letter-spacing: -0.5px;
+        }
+
+        .service-card p {
+            color: var(--text-muted);
+            font-size: 15px;
+            line-height: 1.7;
+        }
+
+        /* Stats */
+        .stats {
+            padding: 60px 0;
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .stat-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 32px;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .stat-grid { grid-template-columns: 1fr; gap: 24px; }
+        }
+
+        .stat-number {
+            font-size: 48px;
+            font-weight: 800;
+            color: var(--accent);
+            letter-spacing: -2px;
+        }
+
+        .stat-label {
+            color: var(--text-muted);
+            font-size: 15px;
+            margin-top: 4px;
+        }
+
+        /* Blog section */
+        .blog {
+            padding: 80px 0;
+        }
+
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 24px;
+        }
+
+        .blog-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 32px;
+            transition: all 0.2s;
+        }
+
+        .blog-card:hover {
+            border-color: var(--text-muted);
+        }
+
+        .blog-date {
+            color: var(--accent);
+            font-size: 13px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        .blog-card h3 {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            line-height: 1.4;
+        }
+
+        .blog-card p {
+            color: var(--text-muted);
+            font-size: 14px;
+        }
+
+        /* Contact */
+        .contact {
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .contact-box {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 24px;
+            padding: 64px 40px;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .contact-box h2 {
+            font-size: clamp(28px, 4vw, 40px);
+            font-weight: 800;
+            margin-bottom: 16px;
+            letter-spacing: -1px;
+        }
+
+        .contact-box p {
+            color: var(--text-muted);
+            margin-bottom: 32px;
+            font-size: 18px;
+        }
+
+        .contact-methods {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        /* Footer */
+        footer {
+            border-top: 1px solid var(--border);
+            padding: 40px 0;
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 14px;
+        }
+
+        footer a {
+            color: var(--text-muted);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        footer a:hover { color: var(--accent); }
+
+        /* Reveal animation */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s, transform 0.6s;
+        }
+
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            * { animation: none !important; transition: none !important; }
+        }
+    </style>
+</head>
+<body>
+    <div class="glow"></div>
+    <div class="glow-2"></div>
+
+    <div class="container">
+        <nav>
+            <div class="logo">Teddy<span>.</span>Apps</div>
+            <ul class="nav-links">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
+            </ul>
+        </nav>
+
+        <section class="hero">
+            <div class="badge">Ledende BC-specialister i Danmark</div>
+            <h1>Vi får <span class="accent">Business Central</span><br>til at arbejde for din virksomhed</h1>
+            <p>Custom apps, integrationer og PHP-løsninger skræddersyet til dit behov. Vi bygger bro mellem Business Central og resten af din verden.</p>
+            <div class="cta-group">
+                <a href="#kontakt" class="btn btn-primary">Book et gratis sparemøde →</a>
+                <a href="#services" class="btn btn-secondary">Se vores services</a>
+            </div>
+        </section>
+
+        <section class="services" id="services">
+            <h2 class="section-title">Hvad vi kan bygge for dig</h2>
+            <p class="section-subtitle">Tre veje til at få mere ud af Business Central</p>
+            <div class="service-grid">
+                <div class="service-card reveal">
+                    <span class="service-icon">🔌</span>
+                    <h3>Integrationer</h3>
+                    <p>Synkroniser BC med din webshop, CRM, bank eller andre systemer. Vi bygger bro mellem systemerne, så data flyder automatisk — uden manuelt dobbeltarbejde.</p>
+                </div>
+                <div class="service-card reveal">
+                    <span class="service-icon">📱</span>
+                    <h3>Custom BC Apps</h3>
+                    <p>Skreddersyede apps og extensions til Business Central. Tilpas workflows, opret specialiserede sider, og automatisér processer der er unikke for din virksomhed.</p>
+                </div>
+                <div class="service-card reveal">
+                    <span class="service-icon">🌐</span>
+                    <h3>PHP & Web</h3>
+                    <p>Hjemmesider, webshops og portaler bygget i PHP. Vi kobler dem direkte sammen med BC, så kunder, varer og ordrer altid er opdateret — begge veje.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="stats">
+            <div class="stat-grid">
+                <div>
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Skræddersyede løsninger</div>
+                </div>
+                <div>
+                    <div class="stat-number">0</div>
+                    <div class="stat-label">Kreditkort nødvendige</div>
+                </div>
+                <div>
+                    <div class="stat-number">DK</div>
+                    <div class="stat-label">Dansk support — på dit sprog</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="blog" id="blog">
+            <h2 class="section-title">Seneste indlæg</h2>
+            <p class="section-subtitle">Tips, guides og indsigt om Business Central</p>
+            <div class="blog-grid" id="blog-grid">
+                <!-- Blog posts added by cron jobs will appear here -->
+            </div>
+        </section>
+
+        <section class="contact" id="kontakt">
+            <div class="contact-box">
+                <h2>Klar til at optimere din Business Central?</h2>
+                <p>Book et gratis, uforpligtende sparemøde. Vi lytter til dine udfordringer og foreslår løsninger.</p>
+                <div class="contact-methods">
+                    <a href="mailto:kontakt@teddyapps.dk" class="btn btn-primary">Send en email →</a>
+                    <a href="https://www.linkedin.com/" class="btn btn-secondary">Find os på LinkedIn</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Teddy Apps — Vi får Business Central til at arbejde for din virksomhed!</p>
+        </div>
+    </footer>
+
+    <script>
+        // Scroll reveal
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>

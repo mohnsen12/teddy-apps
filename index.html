@@ -430,6 +430,122 @@
         @media (prefers-reduced-motion: reduce) {
             * { animation: none !important; transition: none !important; }
         }
+
+        /* Blog category tag */
+        .blog-category {
+            display: inline-block;
+            background: rgba(255,107,53,0.1);
+            color: var(--accent);
+            font-size: 12px;
+            font-weight: 600;
+            padding: 4px 12px;
+            border-radius: 100px;
+            margin-bottom: 12px;
+        }
+
+        /* About section */
+        .about {
+            padding: 80px 0;
+            border-top: 1px solid var(--border);
+        }
+
+        .about-content {
+            max-width: 720px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .about-content p {
+            color: var(--text-muted);
+            font-size: 17px;
+            line-height: 1.8;
+            margin-bottom: 16px;
+        }
+
+        .about-values {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            margin-top: 40px;
+            text-align: left;
+        }
+
+        @media (max-width: 768px) {
+            .about-values { grid-template-columns: 1fr; }
+        }
+
+        .about-value {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 28px 24px;
+        }
+
+        .about-value .icon {
+            font-size: 28px;
+            margin-bottom: 12px;
+            display: block;
+        }
+
+        .about-value h4 {
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .about-value p {
+            font-size: 14px;
+            color: var(--text-muted);
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        /* FAQ section */
+        .faq {
+            padding: 80px 0;
+        }
+
+        .faq-list {
+            max-width: 760px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid var(--border);
+        }
+
+        .faq-item summary {
+            font-size: 18px;
+            font-weight: 600;
+            padding: 20px 0;
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 16px;
+            transition: color 0.2s;
+        }
+
+        .faq-item summary::-webkit-details-marker { display: none; }
+        .faq-item summary:hover { color: var(--accent); }
+
+        .faq-item summary::after {
+            content: '+';
+            font-size: 24px;
+            font-weight: 300;
+            color: var(--accent);
+            flex-shrink: 0;
+        }
+
+        .faq-item[open] summary::after { content: '−'; }
+
+        .faq-item p {
+            color: var(--text-muted);
+            font-size: 15px;
+            line-height: 1.7;
+            padding: 0 0 20px;
+        }
     </style>
 </head>
 <body>
@@ -441,7 +557,9 @@
             <div class="logo">Teddy<span>.</span>Apps</div>
             <ul class="nav-links">
                 <li><a href="#services">Services</a></li>
+                <li><a href="#om-os">Om os</a></li>
                 <li><a href="#blog">Blog</a></li>
+                <li><a href="#faq">FAQ</a></li>
                 <li><a href="#kontakt">Kontakt</a></li>
             </ul>
         </nav>
@@ -495,11 +613,103 @@
             </div>
         </section>
 
+        <section class="about" id="om-os">
+            <h2 class="section-title">Om Teddy Apps</h2>
+            <p class="section-subtitle">Specialister i Business Central — fra integration til skræddersyet kode</p>
+            <div class="about-content">
+                <p>Teddy Apps hjælper danske virksomheder med at få mere ud af Microsoft Business Central. Vi bygger de broer og tilpasninger, der mangler — mellem BC og din webshop, dine kunders selvbetjening eller dine interne workflows.</p>
+                <p>Vi tror ikke på standardløsninger til ikke-standard problemer. Derfor bygger vi altid skræddersyet: integrationer, custom apps og web-løsninger der passer præcis til din virksomheds processer — ikke omvendt.</p>
+                <div class="about-values">
+                    <div class="about-value reveal">
+                        <span class="icon">🎯</span>
+                        <h4>Skræddersyet</h4>
+                        <p>Ingen skabeloner. Vi bygger til dine processer, ikke til en manual.</p>
+                    </div>
+                    <div class="about-value reveal">
+                        <span class="icon">🇩🇰</span>
+                        <h4>Dansk & lokalt</h4>
+                        <p>Support på dit sprog, når det passer dig. Vi kender det danske SMB-marked.</p>
+                    </div>
+                    <div class="about-value reveal">
+                        <span class="icon">⚡</span>
+                        <h4>Hurtig værdi</h4>
+                        <p>Vi fokuserer på løsninger der sparer tid fra dag ét — ikke teknologi for teknologiens skyld.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section class="blog" id="blog">
             <h2 class="section-title">Seneste indlæg</h2>
             <p class="section-subtitle">Tips, guides og indsigt om Business Central</p>
             <div class="blog-grid" id="blog-grid">
-                <!-- Blog posts added by cron jobs will appear here -->
+                <article class="blog-card reveal">
+                    <span class="blog-category">Integrationer</span>
+                    <div class="blog-date">August 2026</div>
+                    <h3>BC ↔ Shopify/WooCommerce: Synkronisering der virker</h3>
+                    <p>Kører din webshop på Shopify eller WooCommerce og din økonomi på Business Central? Her er hvordan en direkte integration løser ordrehåndtering, lager og priser — automatisk.</p>
+                </article>
+                <article class="blog-card reveal">
+                    <span class="blog-category">Custom BC Apps</span>
+                    <div class="blog-date">August 2026</div>
+                    <h3>Custom workflows og godkendelsesprocesser i BC</h3>
+                    <p>Standard-workflows dækker det grundlæggende. Men rigtige virksomheder har sjældent rigtige standardprocesser. Her er tre områder hvor custom workflows gør en konkret forskel.</p>
+                </article>
+                <article class="blog-card reveal">
+                    <span class="blog-category">PHP & Web</span>
+                    <div class="blog-date">August 2026</div>
+                    <h3>B2B-portal integreret med Business Central</h3>
+                    <p>Lad dine B2B-kunder se priser, lager og ordrestatus selv — uden at ringe til kundeservice. Sådan bygger vi portaler der taler direkte med BC i realtid.</p>
+                </article>
+                <article class="blog-card reveal">
+                    <span class="blog-category">Integrationer</span>
+                    <div class="blog-date">Juni 2026</div>
+                    <h3>Stop det manuelle dobbeltarbejde mellem BC og webshop</h3>
+                    <p>Varer opdateres i BC, men webshoppen viser gamle priser. Ordrer lander i webshoppen, men skal indtastes manuelt. Her er 3 ting du kan gøre for at stoppe spildtiden.</p>
+                </article>
+                <article class="blog-card reveal">
+                    <span class="blog-category">Custom BC Apps</span>
+                    <div class="blog-date">Juni 2026</div>
+                    <h3>Business Central er en platform — ikke en færdig kasse</h3>
+                    <p>Mange tror at BC er et færdigt system man skal tilpasse sig. Virkeligheden er den modsatte: BC er en platform du kan bygge videre på. Her er hvordan.</p>
+                </article>
+                <article class="blog-card reveal">
+                    <span class="blog-category">PHP & Web</span>
+                    <div class="blog-date">Juni 2026</div>
+                    <h3>Din webshop og dit ERP bor i hvert sit hus</h3>
+                    <p>De burde bo sammen. Vi bygger PHP-baserede integrationer der forbinder din webshop direkte med BC — ordrer, lager, kundedata og priser, alt sammen automatisk.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="faq" id="faq">
+            <h2 class="section-title">Ofte stillede spørgsmål</h2>
+            <p class="section-subtitle">Det mest populære — samlet ét sted</p>
+            <div class="faq-list">
+                <details class="faq-item">
+                    <summary>Hvilke systemer integrerer I med Business Central?</summary>
+                    <p>Vi integrerer BC med webshops (Shopify, WooCommerce, Magento), CRM-systemer, bank- og betalingsløsninger, B2B-portaler og mange andre tredjepartssystemer. Hvis systemet har et API, kan vi typisk bygge broen.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Arbejder I kun med danske virksomheder?</summary>
+                    <p>Vores primære fokus er danske SMB-virksomheder. Vi leverer support på dansk og kender det lokale marked, momsregler og forretningskulturen. Men vi tager også opgaver for nordiske virksomheder med BC-tilstedeværelse i Danmark.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Hvor lang tid tager et typisk projekt?</summary>
+                    <p>Det afhænger af omfanget. En standard integration kan være live på 2-4 uger. Custom apps og større portaler tager typisk 4-12 uger. Vi giver altid et realistisk tidsestimate efter det første møde.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Hvad koster det at få bygget en løsning?</summary>
+                    <p>Prisen afhænger af kompleksitet og omfang. Vi tilbyder et gratis, uforpligtende sparemøde hvor vi gennemgår dine behov og giver et gennemsigtigt tilbud. Der er ingen skjulte gebyrer eller binding.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Kan I overtage vedligehold af en eksisterende BC-løsning?</summary>
+                    <p>Ja. Vi tager både nye projekter og overtager vedligehold af eksisterende løsninger — også dem andre har bygget. Vi laver et review af koden og giver dig en ærlig vurdering af tilstand og anbefalinger.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Tilbyder I løbende support efter launch?</summary>
+                    <p>Ja. Vi tilbyder både ad-hoc support og faste supportaftaler afhængig af dine behov. Mange af vores kunder har en løbende aftale så de altid har hurtig hjælp klar.</p>
+                </details>
             </div>
         </section>
 

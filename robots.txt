@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mohnsen12.github.io/teddy-apps/sitemap.xml

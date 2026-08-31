@@ -177,8 +177,45 @@
 
         .nav-links a:hover { color: var(--text); }
 
+        /* Mobile nav toggle */
+        .nav-toggle {
+            display: none;
+            background: none;
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            color: var(--text);
+            font-size: 20px;
+            line-height: 1;
+            padding: 10px 14px;
+            cursor: pointer;
+        }
+
+        .nav-toggle .nav-close { display: none; }
+        .nav-toggle[aria-expanded="true"] .nav-open { display: none; }
+        .nav-toggle[aria-expanded="true"] .nav-close { display: inline; }
+
         @media (max-width: 768px) {
-            .nav-links { display: none; }
+            .nav-toggle { display: inline-flex; }
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                gap: 0;
+                width: 100%;
+                margin-top: 16px;
+                border: 1px solid var(--border);
+                border-radius: 14px;
+                background: var(--bg-card);
+                overflow: hidden;
+            }
+            .nav-links.open { display: flex; }
+            .nav-links li { border-bottom: 1px solid var(--border); }
+            .nav-links li:last-child { border-bottom: none; }
+            .nav-links a {
+                display: block;
+                padding: 14px 20px;
+                font-size: 16px;
+            }
+            nav { flex-wrap: wrap; }
         }
 
         /* Hero */
@@ -620,7 +657,11 @@
     <div class="container">
         <nav>
             <div class="logo">Teddy<span>.</span>Apps</div>
-            <ul class="nav-links">
+            <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Åbn menu">
+                <span class="nav-open" aria-hidden="true">☰</span>
+                <span class="nav-close" aria-hidden="true">✕</span>
+            </button>
+            <ul class="nav-links" id="nav-links">
                 <li><a href="#services">Services</a></li>
                 <li><a href="#om-os">Om os</a></li>
                 <li><a href="#blog">Blog</a></li>
@@ -708,6 +749,24 @@
             <h2 class="section-title">Seneste indlæg</h2>
             <p class="section-subtitle">Tips, guides og indsigt om Business Central</p>
             <div class="blog-grid" id="blog-grid">
+                <article class="blog-card reveal">
+                    <span class="blog-category">Custom BC Apps</span>
+                    <div class="blog-date">August 2026</div>
+                    <h3>Løber jeres godkendelser uden om Business Central?</h3>
+                    <p>Når godkendelser lever i mail, Excel og Teams, forsvinder sporbarheden. Custom workflows i BC giver beløbsgrænser i flowet, automatisk stedfortræder ved ferie og fuldt revisionsspor — ét klik og det hele er dokumenteret.</p>
+                </article>
+                <article class="blog-card reveal">
+                    <span class="blog-category">Integrationer</span>
+                    <div class="blog-date">August 2026</div>
+                    <h3>Hvor mange webshop-ordrer taster du ind i hånden denne uge?</h3>
+                    <p>Webshop og økonomi som to adskilte øer? En BC ↔ Shopify/WooCommerce integration flytter ordrer, lager og priser automatisk, så regnskabet holder sig opdateret af sig selv — uden copy-paste mellem to systemer.</p>
+                </article>
+                <article class="blog-card reveal">
+                    <span class="blog-category">PHP &amp; Web</span>
+                    <div class="blog-date">August 2026</div>
+                    <h3>»Kan du lige sende mig en pris?« — giv B2B-kunderne selvbetjening</h3>
+                    <p>Hvis prisforespørgsler lander i jeres indbakke ugen efter uge, mangler kunderne et bedre sted at handle. En B2B-portal på BC viser aftalepriser, rabatter og lagerstatus automatisk — og ordren går direkte ind i systemet.</p>
+                </article>
                 <article class="blog-card reveal">
                     <span class="blog-category">Custom BC Apps</span>
                     <div class="blog-date">August 2026</div>
@@ -833,6 +892,26 @@
     </footer>
 
     <script>
+        // Mobile nav
+        const navToggle = document.querySelector('.nav-toggle');
+        const navLinks = document.getElementById('nav-links');
+
+        if (navToggle && navLinks) {
+            navToggle.addEventListener('click', () => {
+                const open = navLinks.classList.toggle('open');
+                navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+                navToggle.setAttribute('aria-label', open ? 'Luk menu' : 'Åbn menu');
+            });
+
+            navLinks.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    navLinks.classList.remove('open');
+                    navToggle.setAttribute('aria-expanded', 'false');
+                    navToggle.setAttribute('aria-label', 'Åbn menu');
+                });
+            });
+        }
+
         // Scroll reveal
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {

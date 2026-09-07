@@ -15,6 +15,7 @@
     <meta property="og:site_name" content="Teddy Apps">
     <meta property="og:url" content="https://mohnsen12.github.io/teddy-apps/">
     <meta property="og:image" content="https://mohnsen12.github.io/teddy-apps/og-image.png">
+    <meta property="og:image:alt" content="Teddy Apps — Vi får Business Central til at arbejde for din virksomhed">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Teddy Apps — Business Central Specialister">
     <meta name="twitter:description" content="Custom BC apps, integrationer og PHP-løsninger til din virksomhed.">
@@ -648,9 +649,81 @@
             line-height: 1.7;
             padding: 0 0 20px;
         }
+
+        /* Process section */
+        .process {
+            padding: 80px 0;
+            border-top: 1px solid var(--border);
+        }
+
+        .process-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+        }
+
+        @media (max-width: 900px) {
+            .process-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+
+        @media (max-width: 600px) {
+            .process-grid { grid-template-columns: 1fr; }
+        }
+
+        .process-step {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 28px 24px;
+        }
+
+        .process-step .number {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: rgba(255,107,53,0.12);
+            color: var(--accent);
+            font-weight: 800;
+            font-size: 16px;
+            margin-bottom: 14px;
+        }
+
+        .process-step h4 {
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .process-step p {
+            font-size: 14px;
+            color: var(--text-muted);
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        /* Skip link (tilgængelighed) */
+        .skip-link {
+            position: absolute;
+            top: -48px;
+            left: 16px;
+            background: var(--accent);
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-weight: 600;
+            text-decoration: none;
+            z-index: 10000;
+            transition: top 0.2s;
+        }
+
+        .skip-link:focus { top: 12px; }
     </style>
 </head>
 <body>
+    <a href="#main" class="skip-link">Spring til indhold</a>
     <div class="glow"></div>
     <div class="glow-2"></div>
 
@@ -670,6 +743,7 @@
             </ul>
         </nav>
 
+        <main id="main">
         <section class="hero">
             <div class="badge">Ledende BC-specialister i Danmark</div>
             <h1>Vi får <span class="accent">Business Central</span><br>til at arbejde for din virksomhed</h1>
@@ -745,10 +819,55 @@
             </div>
         </section>
 
+        <section class="process" id="sadan-arbejder-vi">
+            <h2 class="section-title">Sådan arbejder vi</h2>
+            <p class="section-subtitle">Fra første snak til løsning der kører — fire klare trin</p>
+            <div class="process-grid">
+                <div class="process-step reveal">
+                    <span class="number">1</span>
+                    <h4>Gratis sparemøde</h4>
+                    <p>Vi lytter til jeres udfordringer og afdækker, hvor tiden faktisk går tabt — uforpligtende og konkret.</p>
+                </div>
+                <div class="process-step reveal">
+                    <span class="number">2</span>
+                    <h4>Tilbud &amp; plan</h4>
+                    <p>I får et gennemsigtigt tilbud med fast pris, tidsestimate og klare milepæle. Ingen overraskelser.</p>
+                </div>
+                <div class="process-step reveal">
+                    <span class="number">3</span>
+                    <h4>Byg &amp; test</h4>
+                    <p>Vi bygger løsningen i tæt dialog med jer og tester den på jeres egne data, før den går live.</p>
+                </div>
+                <div class="process-step reveal">
+                    <span class="number">4</span>
+                    <h4>Launch &amp; support</h4>
+                    <p>Løsningen går i drift — og vi er stadig her med dansk support og løbende vedligehold, hvis behovet opstår.</p>
+                </div>
+            </div>
+        </section>
+
         <section class="blog" id="blog">
             <h2 class="section-title">Seneste indlæg</h2>
             <p class="section-subtitle">Tips, guides og indsigt om Business Central</p>
             <div class="blog-grid" id="blog-grid">
+                <article class="blog-card reveal">
+                    <span class="blog-category">Custom BC Apps</span>
+                    <div class="blog-date">September 2026</div>
+                    <h3>Skal I tilpasse jer Business Central — eller omvendt?</h3>
+                    <p>Standard-workflows dækker de mest almindelige scenarier. Men mange har processer, der ikke passer i skabelonen. Med custom workflows bygger I flowet omkring jeres proces — med beløbsgrænser, stedfortrædere og notifikationer der handler.</p>
+                </article>
+                <article class="blog-card reveal">
+                    <span class="blog-category">Integrationer</span>
+                    <div class="blog-date">September 2026</div>
+                    <h3>»Hvornår sender du min vare?« — webshop og BC i sync</h3>
+                    <p>Hvis webshoppen og BC ikke taler sammen, er broen ofte dig — kl. 16:45 en fredag. En rigtig integration giver ét sted at styre varedata, ordrer der håndterer sig selv og et regnskab, der kan stoles på.</p>
+                </article>
+                <article class="blog-card reveal">
+                    <span class="blog-category">PHP &amp; Web</span>
+                    <div class="blog-date">September 2026</div>
+                    <h3>Kundeservice er blevet opslagsværk — giv kunderne selvbetjening</h3>
+                    <p>Hvor mange gange denne uge har jeres team svaret på »hvad står min ordre til?«? En B2B-portal på BC giver live ordre- og lagerstatus, selvbetjening på fakturaer og ordrer der lander direkte i systemet.</p>
+                </article>
                 <article class="blog-card reveal">
                     <span class="blog-category">Custom BC Apps</span>
                     <div class="blog-date">August 2026</div>
@@ -883,6 +1002,7 @@
                 </div>
             </div>
         </section>
+        </main>
     </div>
 
     <footer>

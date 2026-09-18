@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#ff6b35">
+    <meta name="author" content="Teddy Apps">
+    <title>Privatlivspolitik — Teddy Apps</title>
+    <meta name="description" content="Privatlivspolitik for Teddy Apps — hvordan vi behandler persondata i overensstemmelse med GDPR.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://mohnsen12.github.io/teddy-apps/privacy.html">
+    <style>
+        :root {
+            --bg: #0a0a0a;
+            --bg-secondary: #121212;
+            --bg-card: #181818;
+            --text: #fafafa;
+            --text-muted: #8b8b8b;
+            --accent: #ff6b35;
+            --accent-hover: #ff8555;
+            --border: #2a2a2a;
+            --max-width: 1100px;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            inset: 0;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' /%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+            pointer-events: none;
+            z-index: 9999;
+            opacity: 0.4;
+        }
+
+        .glow {
+            position: fixed;
+            top: -300px;
+            right: -200px;
+            width: 700px;
+            height: 700px;
+            background: radial-gradient(circle, rgba(255,107,53,0.07) 0%, transparent 70%);
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .glow-2 {
+            position: fixed;
+            bottom: -200px;
+            left: -300px;
+            width: 700px;
+            height: 700px;
+            background: radial-gradient(circle, rgba(56,130,246,0.05) 0%, transparent 70%);
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 24px;
+            position: relative;
+            z-index: 1;
+        }
+
+        nav {
+            padding: 24px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            text-decoration: none;
+            color: var(--text);
+        }
+
+        .logo span { color: var(--accent); }
+
+        .nav-links {
+            display: flex;
+            gap: 32px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 15px;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover { color: var(--text); }
+
+        .nav-toggle {
+            display: none;
+            background: none;
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            color: var(--text);
+            font-size: 20px;
+            line-height: 1;
+            padding: 10px 14px;
+            cursor: pointer;
+        }
+
+        .nav-toggle .nav-close { display: none; }
+        .nav-toggle[aria-expanded="true"] .nav-open { display: none; }
+        .nav-toggle[aria-expanded="true"] .nav-close { display: inline; }
+
+        @media (max-width: 768px) {
+            .nav-toggle { display: inline-flex; }
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                gap: 0;
+                width: 100%;
+                margin-top: 16px;
+                border: 1px solid var(--border);
+                border-radius: 14px;
+                background: var(--bg-card);
+                overflow: hidden;
+            }
+            .nav-links.open { display: flex; }
+            .nav-links li { border-bottom: 1px solid var(--border); }
+            .nav-links li:last-child { border-bottom: none; }
+            .nav-links a {
+                display: block;
+                padding: 14px 20px;
+                font-size: 16px;
+            }
+            nav { flex-wrap: wrap; }
+        }
+
+        .page-header {
+            padding: 64px 0 40px;
+            text-align: center;
+        }
+
+        .page-header h1 {
+            font-size: clamp(32px, 5vw, 52px);
+            font-weight: 800;
+            letter-spacing: -1.5px;
+            margin-bottom: 16px;
+        }
+
+        .page-header .meta {
+            color: var(--text-muted);
+            font-size: 15px;
+        }
+
+        .policy {
+            max-width: 760px;
+            margin: 0 auto;
+            padding: 0 0 80px;
+        }
+
+        .policy section {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 32px;
+            margin-bottom: 24px;
+        }
+
+        .policy h2 {
+            font-size: 22px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .policy h2 .num {
+            color: var(--accent);
+            font-size: 15px;
+            font-weight: 800;
+        }
+
+        .policy p {
+            color: var(--text-muted);
+            margin-bottom: 12px;
+            font-size: 16px;
+        }
+
+        .policy p:last-child { margin-bottom: 0; }
+
+        .policy strong { color: var(--text); }
+
+        .policy ul {
+            margin: 12px 0 0 20px;
+            color: var(--text-muted);
+            font-size: 16px;
+        }
+
+        .policy li { margin-bottom: 8px; }
+
+        .policy li:last-child { margin-bottom: 0; }
+
+        .policy a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        .policy a:hover { text-decoration: underline; }
+
+        footer {
+            border-top: 1px solid var(--border);
+            padding: 32px 0;
+            color: var(--text-muted);
+            font-size: 14px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="glow"></div>
+    <div class="glow-2"></div>
+
+    <div class="container">
+        <nav>
+            <a href="/" class="logo">Teddy<span>.</span>Apps</a>
+            <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Åbn menu">
+                <span class="nav-open" aria-hidden="true">☰</span>
+                <span class="nav-close" aria-hidden="true">✕</span>
+            </button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="/#services">Services</a></li>
+                <li><a href="/#om-os">Om os</a></li>
+                <li><a href="/#blog">Blog</a></li>
+                <li><a href="/#faq">FAQ</a></li>
+                <li><a href="/#kontakt">Kontakt</a></li>
+            </ul>
+        </nav>
+
+        <main id="main">
+        <header class="page-header">
+            <h1>Privatlivspolitik</h1>
+            <p class="meta">Sidst opdateret: september 2026</p>
+        </header>
+
+        <div class="policy">
+            <section>
+                <h2><span class="num">01</span> Hvem er dataansvarlig?</h2>
+                <p>Teddy Apps er dataansvarlig for behandlingen af de persondata, der beskrives i denne politik. Du kan når som helst kontakte os på <a href="mailto:kontakt@teddyapps.dk">kontakt@teddyapps.dk</a>.</p>
+            </section>
+
+            <section>
+                <h2><span class="num">02</span> Hvilke data indsamler vi?</h2>
+                <p>Vi holder det så enkelt som muligt:</p>
+                <ul>
+                    <li><strong>Kontakt via e-mail:</strong> Når du skriver til os, behandler vi det navn og den e-mailadresse, du selv opgiver — samt indholdet af din henvendelse.</li>
+                    <li><strong>Ingen cookies fra os:</strong> Dette website sætter selv ingen cookies og bruger ingen sporings- eller reklameværktøjer.</li>
+                    <li><strong>Serverlogs:</strong> Siden er hostet hos GitHub Pages. GitHub kan registrere tekniske data (fx IP-adresse og browseroplysninger) i deres logfiler. Det er GitHub, der er dataansvarlig for denne behandling — se GitHubs egen privatlivspolitik.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2><span class="num">03</span> Hvad bruger vi dataene til?</h2>
+                <ul>
+                    <li>At besvare dine henvendelser og give dig gode råd om Business Central.</li>
+                    <li>At kunne følge op på en mulig samarbejdsdialog, du selv har taget initiativ til.</li>
+                    <li>Ingenting andet. Vi sælger ikke dine data og bruger dem ikke til reklamer.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2><span class="num">04</span> Hvorfor må vi det (retligt grundlag)?</h2>
+                <p>Behandlingen sker efter GDPR:</p>
+                <ul>
+                    <li><strong>Berettiget interesse (art. 6, stk. 1, litra f):</strong> Når du kontakter os, har vi en naturlig interesse i at svare og følge op på din henvendelse.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2><span class="num">05</span> Hvor længe gemmer vi dataene?</h2>
+                <p>Vi sletter henvendelser, når samtalen er afsluttet, og der ikke længere er et naturligt grundlag for at gemme dem — typisk senest 12 måneder efter sidste kontakt, medmindre vi er forpligtet til at gemme dem længere (fx regnskabsmateriale efter bogføringsloven).</p>
+            </section>
+
+            <section>
+                <h2><span class="num">06</span> Dine rettigheder</h2>
+                <p>Efter GDPR har du bl.a. ret til:</p>
+                <ul>
+                    <li>At få indsigt i, hvilke af dine data vi behandler.</li>
+                    <li>At få dem rettet eller slettet.</li>
+                    <li>At gøre indsigelse mod behandlingen.</li>
+                    <li>At klage til Datatilsynet (<a href="https://www.datatilsynet.dk" rel="noopener">datatilsynet.dk</a>).</li>
+                </ul>
+                <p>Kontakt os på <a href="mailto:kontakt@teddyapps.dk">kontakt@teddyapps.dk</a>, så klarer vi det hurtigt.</p>
+            </section>
+
+            <section>
+                <h2><span class="num">07</span> Ændringer</h2>
+                <p>Vi kan opdatere denne politik fra tid til anden. Gældende version findes altid på denne side.</p>
+            </section>
+        </div>
+        </main>
+
+        <footer>
+            <div class="container">
+                <p>&copy; 2026 Teddy Apps — Vi får Business Central til at arbejde for din virksomhed! &middot; <a href="/privacy.html" style="color: var(--text-muted);">Privatlivspolitik</a></p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        const navToggle = document.querySelector('.nav-toggle');
+        const navLinks = document.getElementById('nav-links');
+
+        if (navToggle && navLinks) {
+            navToggle.addEventListener('click', () => {
+                const open = navLinks.classList.toggle('open');
+                navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+                navToggle.setAttribute('aria-label', open ? 'Luk menu' : 'Åbn menu');
+            });
+
+            navLinks.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    navLinks.classList.remove('open');
+                    navToggle.setAttribute('aria-expanded', 'false');
+                    navToggle.setAttribute('aria-label', 'Åbn menu');
+                });
+            });
+        }
+    </script>
+</body>
+</html>

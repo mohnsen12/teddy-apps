@@ -1,0 +1,24 @@
+[
+  {
+    "run_id": "ig-real-test-20260919",
+    "post_id": null,
+    "category": null,
+    "media_id": "billeder/integrationer/08f87264-48c5-491b-b733-db176edd0318.png",
+    "media_path": "/Users/teddy/teddy-apps/billeder/integrationer/08f87264-48c5-491b-b733-db176edd0318.png",
+    "media_type": "image",
+    "sha256": "5183e088c8a4aab0809be03a0ac456a8713cebbc010dde8adfe6bad66d60b7bb",
+    "posted_at": "2026-09-18T22:35:46.473993+00:00",
+    "instagram_response": {
+      "creation_id": "18102821525097008",
+      "media_type": "image",
+      "account": "teddyapps82",
+      "staging_photo_id": "122095349463487112",
+      "instagram_media_id": "18014500970944795",
+      "success": true,
+      "published": true,
+      "platform": "instagram",
+      "media_id": "billeder/integrationer/08f87264-48c5-491b-b733-db176edd0318.png",
+      "run_id": "ig-real-test-20260919"
+    }
+  }
+]

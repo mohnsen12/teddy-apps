@@ -1,0 +1,104 @@
+{
+  "website_url": "https://mohnsen12.github.io/teddy-apps/",
+  "brand": {
+    "name": "Teddy Apps",
+    "tagline": "Vi får Business Central til at arbejde for din virksomhed!",
+    "tone": "Klar, praktisk og jordnær dansk B2B. Ingen emojis, ingen hashtags og ingen løfter uden belæg."
+  },
+  "posting_schedule": {
+    "mix": {
+      "integrationer": 3,
+      "automatisering": 3,
+      "b2b-portaler": 2,
+      "custom-bc-apps": 3,
+      "workflows": 2
+    }
+  },
+  "categories": {
+    "integrationer": {
+      "image_folder": "billeder/integrationer",
+      "posts": [
+        {
+          "id": "int-01",
+          "headline": "Stop med at flytte data mellem systemer",
+          "post_text": "Når ordredata, kunder eller lagerbeholdning bliver kopieret manuelt mellem webshop, CRM og Business Central, bliver fejl hurtigt en del af hverdagen. En målrettet integration lader systemerne udveksle de rigtige data automatisk, så teamet kan bruge tiden på kunderne i stedet.",
+          "cta": "Teddy Apps bygger integrationer, der passer til jeres arbejdsgange."
+        },
+        {
+          "id": "int-02",
+          "headline": "Business Central virker bedst sammen med resten",
+          "post_text": "Business Central skal ikke være en ø. Vi forbinder det med de systemer, virksomheden allerede bruger, fra webshop og CRM til bank, lager eller en intern løsning. Resultatet er et mere samlet flow og færre manuelle overleveringer.",
+          "cta": "Se, hvordan vi får systemerne til at arbejde sammen."
+        }
+      ]
+    },
+    "automatisering": {
+      "image_folder": "billeder/automatisering",
+      "posts": [
+        {
+          "id": "auto-01",
+          "headline": "Små gentagelser bliver hurtigt til store tidstyve",
+          "post_text": "Det er sjældent én stor opgave, der stjæler tiden. Det er de samme små handlinger, som skal gentages hver dag: tjekke status, flytte data, oprette noget eller sende en besked. Automatisering kan tage de gentagelser og gøre processen mere stabil.",
+          "cta": "Vi hjælper med at finde den automatisering, der giver mest værdi først."
+        },
+        {
+          "id": "auto-02",
+          "headline": "Lad systemet tage rutinen",
+          "post_text": "Når en arbejdsgang er tydelig, kan den ofte automatiseres uden at gøre hverdagen mere tung. Vi udvikler løsninger omkring Business Central, der afvikler rutinearbejde i baggrunden og giver medarbejderne et bedre overblik.",
+          "cta": "En lille tilpasning kan gøre en mærkbar forskel."
+        }
+      ]
+    },
+    "b2b-portaler": {
+      "image_folder": "billeder/b2b-portaler",
+      "posts": [
+        {
+          "id": "b2b-01",
+          "headline": "Giv kunderne et sted at klare det selv",
+          "post_text": "En B2B-portal kan give kunder adgang til de oplysninger, de efterspørger igen og igen: egne priser, ordrehistorik, lagerstatus eller dokumenter. Når portalen er koblet til Business Central, er oplysningerne de samme for kunden og medarbejderen.",
+          "cta": "Teddy Apps udvikler B2B-portaler med jeres processer som udgangspunkt."
+        },
+        {
+          "id": "b2b-02",
+          "headline": "Selvbetjening, der stadig føles personlig",
+          "post_text": "God selvbetjening handler ikke om at skubbe kunder væk. Den handler om at gøre de enkle ting hurtige, så dialogen kan bruges på det, der kræver rådgivning. En gennemtænkt B2B-portal giver bedre adgang uden at miste det personlige forhold.",
+          "cta": "Vi kan bygge det digitale led mellem jeres kunder og Business Central."
+        }
+      ]
+    },
+    "custom-bc-apps": {
+      "image_folder": "billeder/custom-bc-apps",
+      "posts": [
+        {
+          "id": "app-01",
+          "headline": "Business Central skal passe til jer",
+          "post_text": "Standardfunktioner er et godt udgangspunkt, men virksomhedens arbejdsgange er sjældent helt standard. En skræddersyet app eller udvidelse kan gøre det daglige arbejde enklere, uden at I skal ændre en proces, der allerede giver mening.",
+          "cta": "Vi udvikler Business Central-løsninger med praktisk forretningsværdi."
+        },
+        {
+          "id": "app-02",
+          "headline": "En mindre BC-tilpasning kan have stor effekt",
+          "post_text": "Man behøver ikke starte med et stort projekt. Et bedre godkendelsesflow, et tilpasset felt, en tydeligere status eller en automatisk handling kan fjerne friktion i hverdagen. Vi starter gerne med den opgave, der er mest mærkbar for teamet.",
+          "cta": "Fortæl os, hvad der er blevet en daglig omvej."
+        }
+      ]
+    },
+    "workflows": {
+      "image_folder": "billeder/workflows",
+      "posts": [
+        {
+          "id": "flow-01",
+          "headline": "Godkendelser skal fremad, ikke rundt i indbakken",
+          "post_text": "Når godkendelser lever i e-mails, beskeder og opfølgninger, er det svært at se, hvor en sag står. Et tydeligt workflow i og omkring Business Central samler processen, gør ansvar synligt og hjælper opgaver videre på det rigtige tidspunkt.",
+          "cta": "Vi omsætter arbejdsgange til løsninger, der er til at arbejde i."
+        },
+        {
+          "id": "flow-02",
+          "headline": "Få overblik over processen, mens arbejdet sker",
+          "post_text": "Et godt systemflow giver ikke bare fart. Det gør også status, ansvar og næste skridt nemmere at se. Vi hjælper virksomheder med at bygge arbejdsgange, der understøtter hverdagen i stedet for at skabe endnu et sted at holde øje med.",
+          "cta": "Business Central kan være platformen, der binder processen sammen."
+        }
+      ]
+    }
+  }
+}

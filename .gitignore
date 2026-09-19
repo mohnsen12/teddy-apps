@@ -1,0 +1,4 @@
+
+# Large binaries never to push
+marketing/kokoro_models/
+automation/fiverr_automation/node_modules/

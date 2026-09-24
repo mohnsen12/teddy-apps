@@ -1,5 +1,71 @@
 [
   {
+    "run_id": "instagram-53",
+    "post_id": "int-01",
+    "category": "integrationer",
+    "media_id": "billeder/integrationer/0a5bbe4c-a440-4198-aee4-5f35ae810349.png",
+    "media_path": "/Users/teddy/teddy-apps/billeder/integrationer/0a5bbe4c-a440-4198-aee4-5f35ae810349.png",
+    "media_type": "image",
+    "sha256": "639ffb54247c612636022f52900aced06750423462c0c978b5f56fac01cdc8db",
+    "posted_at": "2026-09-23T18:45:29.406862+00:00",
+    "instagram_response": {
+      "creation_id": "18104510546097008",
+      "media_type": "image",
+      "account": "teddyapps82",
+      "staging_photo_id": "122099594523487112",
+      "instagram_media_id": "18089969003674351",
+      "success": true,
+      "published": true,
+      "platform": "instagram",
+      "media_id": "billeder/integrationer/0a5bbe4c-a440-4198-aee4-5f35ae810349.png",
+      "run_id": "instagram-53"
+    }
+  },
+  {
+    "run_id": "instagram-51",
+    "post_id": "flow-01",
+    "category": "workflows",
+    "media_id": "billeder/workflows/Codex-billede 18. sep. 2026, 00.21.45.png",
+    "media_path": "/Users/teddy/teddy-apps/billeder/workflows/Codex-billede 18. sep. 2026, 00.21.45.png",
+    "media_type": "image",
+    "sha256": "0afdfd64bb157f45b0adfdd446f0266015de8ab63421d4a882857d46a1ba575f",
+    "posted_at": "2026-09-22T18:45:22.184243+00:00",
+    "instagram_response": {
+      "creation_id": "18104227202097008",
+      "media_type": "image",
+      "account": "teddyapps82",
+      "staging_photo_id": "122098699917487112",
+      "instagram_media_id": "18100217228368228",
+      "success": true,
+      "published": true,
+      "platform": "instagram",
+      "media_id": "billeder/workflows/Codex-billede 18. sep. 2026, 00.21.45.png",
+      "run_id": "instagram-51"
+    }
+  },
+  {
+    "run_id": "instagram-48",
+    "post_id": "app-01",
+    "category": "custom-bc-apps",
+    "media_id": "billeder/custom-bc-apps/Codex-billede 18. sep. 2026, 00.08.33.png",
+    "media_path": "/Users/teddy/teddy-apps/billeder/custom-bc-apps/Codex-billede 18. sep. 2026, 00.08.33.png",
+    "media_type": "image",
+    "sha256": "68b8f2ce2a5d77ca6a620f0489fddd8adf6d3ff16b0d01c94f2088d1c4bad64d",
+    "posted_at": "2026-09-21T18:45:24.226141+00:00",
+    "instagram_response": {
+      "creation_id": "18103920749097008",
+      "media_type": "image",
+      "account": "teddyapps82",
+      "staging_photo_id": "122097853275487112",
+      "instagram_media_id": "18026929826859879",
+      "success": true,
+      "published": true,
+      "platform": "instagram",
+      "media_id": "billeder/custom-bc-apps/Codex-billede 18. sep. 2026, 00.08.33.png",
+      "run_id": "instagram-48"
+    }
+  },
+  {
     "run_id": "instagram-46",
     "post_id": "flow-02",
     "category": "workflows",

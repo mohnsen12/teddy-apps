@@ -1,5 +1,24 @@
 [
   {
+    "run_id": "facebook-56",
+    "post_id": "app-02",
+    "category": "custom-bc-apps",
+    "media_id": "billeder/custom-bc-apps/Codex-billede 18. sep. 2026, 00.10.18.png",
+    "media_path": "/Users/teddy/teddy-apps/billeder/custom-bc-apps/Codex-billede 18. sep. 2026, 00.10.18.png",
+    "media_type": "image",
+    "sha256": "bf5ab2bb477205412baea65e3c3570270da2d96bf1d3d8ce5c68d48211e21850",
+    "posted_at": "2026-09-25T12:30:20.536059+00:00",
+    "facebook_response": {
+      "post_id": "1310521282144790_122101133823487112",
+      "media_type": "image",
+      "success": true,
+      "published": true,
+      "platform": "facebook",
+      "media_id": "billeder/custom-bc-apps/Codex-billede 18. sep. 2026, 00.10.18.png",
+      "run_id": "facebook-56"
+    }
+  },
+  {
     "run_id": "facebook-52",
     "post_id": "auto-02",
     "category": "automatisering",

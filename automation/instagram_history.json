@@ -1,5 +1,49 @@
 [
   {
+    "run_id": "instagram-57",
+    "post_id": "auto-02",
+    "category": "automatisering",
+    "media_id": "billeder/automatisering/0d54238e-e71c-4103-a341-8e2a6f683a5c.png",
+    "media_path": "/Users/teddy/teddy-apps/billeder/automatisering/0d54238e-e71c-4103-a341-8e2a6f683a5c.png",
+    "media_type": "image",
+    "sha256": "a5922d1ffa80ff88c5b8ef8c4f4f5d8a08a2c6de65860a048ac4032cdb54f7fa",
+    "posted_at": "2026-09-25T18:45:26.127397+00:00",
+    "instagram_response": {
+      "creation_id": "18105055787097008",
+      "media_type": "image",
+      "account": "teddyapps82",
+      "staging_photo_id": "122101366029487112",
+      "instagram_media_id": "18144299302605353",
+      "success": true,
+      "published": true,
+      "platform": "instagram",
+      "media_id": "billeder/automatisering/0d54238e-e71c-4103-a341-8e2a6f683a5c.png",
+      "run_id": "instagram-57"
+    }
+  },
+  {
+    "run_id": "instagram-55",
+    "post_id": "app-02",
+    "category": "custom-bc-apps",
+    "media_id": "billeder/custom-bc-apps/Codex-billede 18. sep. 2026, 00.10.18.png",
+    "media_path": "/Users/teddy/teddy-apps/billeder/custom-bc-apps/Codex-billede 18. sep. 2026, 00.10.18.png",
+    "media_type": "image",
+    "sha256": "bf5ab2bb477205412baea65e3c3570270da2d96bf1d3d8ce5c68d48211e21850",
+    "posted_at": "2026-09-24T18:45:25.325791+00:00",
+    "instagram_response": {
+      "creation_id": "18104779526097008",
+      "media_type": "image",
+      "account": "teddyapps82",
+      "staging_photo_id": "122100536247487112",
+      "instagram_media_id": "18109492577139972",
+      "success": true,
+      "published": true,
+      "platform": "instagram",
+      "media_id": "billeder/custom-bc-apps/Codex-billede 18. sep. 2026, 00.10.18.png",
+      "run_id": "instagram-55"
+    }
+  },
+  {
     "run_id": "instagram-53",
     "post_id": "int-01",
     "category": "integrationer",

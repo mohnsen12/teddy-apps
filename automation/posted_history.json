@@ -1,5 +1,43 @@
 [
   {
+    "run_id": "facebook-65",
+    "post_id": "flow-02",
+    "category": "workflows",
+    "media_id": "billeder/workflows/Codex-billede 18. sep. 2026, 00.21.45.png",
+    "media_path": "/Users/teddy/teddy-apps/billeder/workflows/Codex-billede 18. sep. 2026, 00.21.45.png",
+    "media_type": "image",
+    "sha256": "0afdfd64bb157f45b0adfdd446f0266015de8ab63421d4a882857d46a1ba575f",
+    "posted_at": "2026-09-30T12:30:44.036699+00:00",
+    "facebook_response": {
+      "post_id": "1310521282144790_122105740101487112",
+      "media_type": "image",
+      "success": true,
+      "published": true,
+      "platform": "facebook",
+      "media_id": "billeder/workflows/Codex-billede 18. sep. 2026, 00.21.45.png",
+      "run_id": "facebook-65"
+    }
+  },
+  {
+    "run_id": "facebook-60",
+    "post_id": "auto-01",
+    "category": "automatisering",
+    "media_id": "billeder/automatisering/0d54238e-e71c-4103-a341-8e2a6f683a5c.png",
+    "media_path": "/Users/teddy/teddy-apps/billeder/automatisering/0d54238e-e71c-4103-a341-8e2a6f683a5c.png",
+    "media_type": "image",
+    "sha256": "a5922d1ffa80ff88c5b8ef8c4f4f5d8a08a2c6de65860a048ac4032cdb54f7fa",
+    "posted_at": "2026-09-28T12:30:25.713607+00:00",
+    "facebook_response": {
+      "post_id": "1310521282144790_122103860955487112",
+      "media_type": "image",
+      "success": true,
+      "published": true,
+      "platform": "facebook",
+      "media_id": "billeder/automatisering/0d54238e-e71c-4103-a341-8e2a6f683a5c.png",
+      "run_id": "facebook-60"
+    }
+  },
+  {
     "run_id": "facebook-56",
     "post_id": "app-02",
     "category": "custom-bc-apps",

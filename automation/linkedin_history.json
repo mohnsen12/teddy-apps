@@ -1,5 +1,26 @@
 [
   {
+    "run_id": "linkedin-63",
+    "post_id": "auto-01",
+    "category": "automatisering",
+    "media_id": "billeder/automatisering/30614459-5443-4f97-85bf-931c083550d1.png",
+    "media_path": "/Users/teddy/teddy-apps/billeder/automatisering/30614459-5443-4f97-85bf-931c083550d1.png",
+    "media_type": "image",
+    "sha256": "4639e723627d54fe6950ab3e1b93c672073fff1f319735b3690c35dd2d9178b6",
+    "posted_at": "2026-09-29T13:30:06.910527+00:00",
+    "linkedin_response": {
+      "asset": "urn:li:digitalmediaAsset:D4E22AQGsiAtOiMaWEg",
+      "author": "urn:li:person:aneDsUK-iD",
+      "media_type": "image",
+      "post_urn": "urn:li:share:7510692384670920705",
+      "success": true,
+      "published": true,
+      "platform": "linkedin",
+      "media_id": "billeder/automatisering/30614459-5443-4f97-85bf-931c083550d1.png",
+      "run_id": "linkedin-63"
+    }
+  },
+  {
     "run_id": "linkedin-54",
     "post_id": "app-01",
     "category": "custom-bc-apps",

@@ -1,0 +1,12 @@
+{
+  "source_sha256": "bf5ab2bb477205412baea65e3c3570270da2d96bf1d3d8ce5c68d48211e21850",
+  "output": {
+    "width": 1080,
+    "height": 1350,
+    "codec": "mjpeg",
+    "pixel_format": "yuvj420p",
+    "fps": "25/1",
+    "duration": 0.04,
+    "audio": []
+  }
+}

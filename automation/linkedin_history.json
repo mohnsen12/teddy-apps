@@ -1,5 +1,26 @@
 [
   {
+    "run_id": "linkedin-66",
+    "post_id": "app-02",
+    "category": "custom-bc-apps",
+    "media_id": "billeder/custom-bc-apps/Codex-billede 18. sep. 2026, 00.10.18.png",
+    "media_path": "/Users/teddy/teddy-apps/billeder/custom-bc-apps/Codex-billede 18. sep. 2026, 00.10.18.png",
+    "media_type": "image",
+    "sha256": "bf5ab2bb477205412baea65e3c3570270da2d96bf1d3d8ce5c68d48211e21850",
+    "posted_at": "2026-10-01T13:30:31.968206+00:00",
+    "linkedin_response": {
+      "asset": "urn:li:digitalmediaAsset:D4E22AQFONtTFZctBHA",
+      "author": "urn:li:person:aneDsUK-iD",
+      "media_type": "image",
+      "post_urn": "urn:li:share:7511417265058394114",
+      "success": true,
+      "published": true,
+      "platform": "linkedin",
+      "media_id": "billeder/custom-bc-apps/Codex-billede 18. sep. 2026, 00.10.18.png",
+      "run_id": "linkedin-66"
+    }
+  },
+  {
     "run_id": "linkedin-63",
     "post_id": "auto-01",
     "category": "automatisering",

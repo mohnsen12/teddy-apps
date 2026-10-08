@@ -1,5 +1,71 @@
 [
   {
+    "run_id": "instagram-81",
+    "post_id": "flow-01",
+    "category": "workflows",
+    "media_id": "billeder/workflows/bdc7cf61-c961-4cb1-9218-0319aa241b5d.png",
+    "media_path": "/Users/teddy/teddy-apps/billeder/workflows/bdc7cf61-c961-4cb1-9218-0319aa241b5d.png",
+    "media_type": "image",
+    "sha256": "9d69d0942d6507c32001a9e767625e598471e830e8c76edbf7d47da5ba96d503",
+    "posted_at": "2026-10-07T18:45:44.906158+00:00",
+    "instagram_response": {
+      "creation_id": "18107910812097008",
+      "media_type": "image",
+      "account": "teddyapps82",
+      "staging_photo_id": "122111236233487112",
+      "instagram_media_id": "18107054717252174",
+      "success": true,
+      "published": true,
+      "platform": "instagram",
+      "media_id": "billeder/workflows/bdc7cf61-c961-4cb1-9218-0319aa241b5d.png",
+      "run_id": "instagram-81"
+    }
+  },
+  {
+    "run_id": "instagram-78",
+    "post_id": "auto-01",
+    "category": "automatisering",
+    "media_id": "billeder/automatisering/30614459-5443-4f97-85bf-931c083550d1.png",
+    "media_path": "/Users/teddy/teddy-apps/billeder/automatisering/30614459-5443-4f97-85bf-931c083550d1.png",
+    "media_type": "image",
+    "sha256": "4639e723627d54fe6950ab3e1b93c672073fff1f319735b3690c35dd2d9178b6",
+    "posted_at": "2026-10-06T18:45:52.563159+00:00",
+    "instagram_response": {
+      "creation_id": "18107672264097008",
+      "media_type": "image",
+      "account": "teddyapps82",
+      "staging_photo_id": "122110669089487112",
+      "instagram_media_id": "17901408735671614",
+      "success": true,
+      "published": true,
+      "platform": "instagram",
+      "media_id": "billeder/automatisering/30614459-5443-4f97-85bf-931c083550d1.png",
+      "run_id": "instagram-78"
+    }
+  },
+  {
+    "run_id": "instagram-75",
+    "post_id": "int-02",
+    "category": "integrationer",
+    "media_id": "billeder/integrationer/08f87264-48c5-491b-b733-db176edd0318.png",
+    "media_path": "/Users/teddy/teddy-apps/billeder/integrationer/08f87264-48c5-491b-b733-db176edd0318.png",
+    "media_type": "image",
+    "sha256": "5183e088c8a4aab0809be03a0ac456a8713cebbc010dde8adfe6bad66d60b7bb",
+    "posted_at": "2026-10-05T18:45:36.561926+00:00",
+    "instagram_response": {
+      "creation_id": "18107456444097008",
+      "media_type": "image",
+      "account": "teddyapps82",
+      "staging_photo_id": "122110134969487112",
+      "instagram_media_id": "18159495715521113",
+      "success": true,
+      "published": true,
+      "platform": "instagram",
+      "media_id": "billeder/integrationer/08f87264-48c5-491b-b733-db176edd0318.png",
+      "run_id": "instagram-75"
+    }
+  },
+  {
     "run_id": "instagram-72",
     "post_id": "auto-01",
     "category": "automatisering",

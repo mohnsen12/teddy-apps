@@ -1,5 +1,43 @@
 [
   {
+    "run_id": "facebook-80",
+    "post_id": "flow-01",
+    "category": "workflows",
+    "media_id": "billeder/workflows/bdc7cf61-c961-4cb1-9218-0319aa241b5d.png",
+    "media_path": "/Users/teddy/teddy-apps/billeder/workflows/bdc7cf61-c961-4cb1-9218-0319aa241b5d.png",
+    "media_type": "image",
+    "sha256": "9d69d0942d6507c32001a9e767625e598471e830e8c76edbf7d47da5ba96d503",
+    "posted_at": "2026-10-07T12:30:25.332351+00:00",
+    "facebook_response": {
+      "post_id": "1310521282144790_122111056809487112",
+      "media_type": "image",
+      "success": true,
+      "published": true,
+      "platform": "facebook",
+      "media_id": "billeder/workflows/bdc7cf61-c961-4cb1-9218-0319aa241b5d.png",
+      "run_id": "facebook-80"
+    }
+  },
+  {
+    "run_id": "facebook-74",
+    "post_id": "app-01",
+    "category": "custom-bc-apps",
+    "media_id": "billeder/custom-bc-apps/Codex-billede 18. sep. 2026, 00.08.33.png",
+    "media_path": "/Users/teddy/teddy-apps/billeder/custom-bc-apps/Codex-billede 18. sep. 2026, 00.08.33.png",
+    "media_type": "image",
+    "sha256": "68b8f2ce2a5d77ca6a620f0489fddd8adf6d3ff16b0d01c94f2088d1c4bad64d",
+    "posted_at": "2026-10-05T12:30:34.905223+00:00",
+    "facebook_response": {
+      "post_id": "1310521282144790_122109963825487112",
+      "media_type": "image",
+      "success": true,
+      "published": true,
+      "platform": "facebook",
+      "media_id": "billeder/custom-bc-apps/Codex-billede 18. sep. 2026, 00.08.33.png",
+      "run_id": "facebook-74"
+    }
+  },
+  {
     "run_id": "facebook-69",
     "post_id": "int-02",
     "category": "integrationer",

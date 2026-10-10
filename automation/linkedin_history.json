@@ -1,5 +1,26 @@
 [
   {
+    "run_id": "linkedin-82",
+    "post_id": "flow-02",
+    "category": "workflows",
+    "media_id": "billeder/workflows/bdc7cf61-c961-4cb1-9218-0319aa241b5d.png",
+    "media_path": "/Users/teddy/teddy-apps/billeder/workflows/bdc7cf61-c961-4cb1-9218-0319aa241b5d.png",
+    "media_type": "image",
+    "sha256": "9d69d0942d6507c32001a9e767625e598471e830e8c76edbf7d47da5ba96d503",
+    "posted_at": "2026-10-08T13:30:30.256400+00:00",
+    "linkedin_response": {
+      "asset": "urn:li:digitalmediaAsset:D4E22AQFICDPemYmxIA",
+      "author": "urn:li:person:aneDsUK-iD",
+      "media_type": "image",
+      "post_urn": "urn:li:share:7513953973574324225",
+      "success": true,
+      "published": true,
+      "platform": "linkedin",
+      "media_id": "billeder/workflows/bdc7cf61-c961-4cb1-9218-0319aa241b5d.png",
+      "run_id": "linkedin-82"
+    }
+  },
+  {
     "run_id": "linkedin-77",
     "post_id": "auto-02",
     "category": "automatisering",

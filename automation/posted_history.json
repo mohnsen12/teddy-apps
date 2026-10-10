@@ -1,5 +1,24 @@
 [
   {
+    "run_id": "facebook-85",
+    "post_id": "int-02",
+    "category": "integrationer",
+    "media_id": "billeder/integrationer/0a5bbe4c-a440-4198-aee4-5f35ae810349.png",
+    "media_path": "/Users/teddy/teddy-apps/billeder/integrationer/0a5bbe4c-a440-4198-aee4-5f35ae810349.png",
+    "media_type": "image",
+    "sha256": "639ffb54247c612636022f52900aced06750423462c0c978b5f56fac01cdc8db",
+    "posted_at": "2026-10-09T12:30:28.968678+00:00",
+    "facebook_response": {
+      "post_id": "1310521282144790_122112114015487112",
+      "media_type": "image",
+      "success": true,
+      "published": true,
+      "platform": "facebook",
+      "media_id": "billeder/integrationer/0a5bbe4c-a440-4198-aee4-5f35ae810349.png",
+      "run_id": "facebook-85"
+    }
+  },
+  {
     "run_id": "facebook-80",
     "post_id": "flow-01",
     "category": "workflows",

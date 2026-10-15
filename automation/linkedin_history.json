@@ -1,5 +1,26 @@
 [
   {
+    "run_id": "linkedin-93",
+    "post_id": "int-01",
+    "category": "integrationer",
+    "media_id": "billeder/integrationer/0a5bbe4c-a440-4198-aee4-5f35ae810349.png",
+    "media_path": "/Users/teddy/teddy-apps/billeder/integrationer/0a5bbe4c-a440-4198-aee4-5f35ae810349.png",
+    "media_type": "image",
+    "sha256": "639ffb54247c612636022f52900aced06750423462c0c978b5f56fac01cdc8db",
+    "posted_at": "2026-10-13T13:30:37.392450+00:00",
+    "linkedin_response": {
+      "asset": "urn:li:digitalmediaAsset:D4E22AQHloh4a9qX2ow",
+      "author": "urn:li:person:aneDsUK-iD",
+      "media_type": "image",
+      "post_urn": "urn:li:share:7515765942186999808",
+      "success": true,
+      "published": true,
+      "platform": "linkedin",
+      "media_id": "billeder/integrationer/0a5bbe4c-a440-4198-aee4-5f35ae810349.png",
+      "run_id": "linkedin-93"
+    }
+  },
+  {
     "run_id": "linkedin-82",
     "post_id": "flow-02",
     "category": "workflows",

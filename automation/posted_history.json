@@ -1,5 +1,24 @@
 [
   {
+    "run_id": "facebook-101",
+    "post_id": "auto-01",
+    "category": "automatisering",
+    "media_id": "billeder/automatisering/0d54238e-e71c-4103-a341-8e2a6f683a5c.png",
+    "media_path": "/Users/teddy/teddy-apps/billeder/automatisering/0d54238e-e71c-4103-a341-8e2a6f683a5c.png",
+    "media_type": "image",
+    "sha256": "a5922d1ffa80ff88c5b8ef8c4f4f5d8a08a2c6de65860a048ac4032cdb54f7fa",
+    "posted_at": "2026-10-16T12:30:41.299077+00:00",
+    "facebook_response": {
+      "post_id": "1310521282144790_122115176919487112",
+      "media_type": "image",
+      "success": true,
+      "published": true,
+      "platform": "facebook",
+      "media_id": "billeder/automatisering/0d54238e-e71c-4103-a341-8e2a6f683a5c.png",
+      "run_id": "facebook-101"
+    }
+  },
+  {
     "run_id": "facebook-96",
     "post_id": "app-01",
     "category": "custom-bc-apps",

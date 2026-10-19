@@ -1,5 +1,49 @@
 [
   {
+    "run_id": "instagram-104",
+    "post_id": "int-01",
+    "category": "integrationer",
+    "media_id": "billeder/integrationer/0a5bbe4c-a440-4198-aee4-5f35ae810349.png",
+    "media_path": "/Users/teddy/teddy-apps/billeder/integrationer/0a5bbe4c-a440-4198-aee4-5f35ae810349.png",
+    "media_type": "image",
+    "sha256": "639ffb54247c612636022f52900aced06750423462c0c978b5f56fac01cdc8db",
+    "posted_at": "2026-10-18T18:45:56.177772+00:00",
+    "instagram_response": {
+      "creation_id": "18110567936097008",
+      "media_type": "image",
+      "account": "teddyapps82",
+      "staging_photo_id": "122116068225487112",
+      "instagram_media_id": "17937665235126388",
+      "success": true,
+      "published": true,
+      "platform": "instagram",
+      "media_id": "billeder/integrationer/0a5bbe4c-a440-4198-aee4-5f35ae810349.png",
+      "run_id": "instagram-104"
+    }
+  },
+  {
+    "run_id": "instagram-103",
+    "post_id": "flow-02",
+    "category": "workflows",
+    "media_id": "billeder/workflows/Codex-billede 18. sep. 2026, 00.21.45.png",
+    "media_path": "/Users/teddy/teddy-apps/billeder/workflows/Codex-billede 18. sep. 2026, 00.21.45.png",
+    "media_type": "image",
+    "sha256": "0afdfd64bb157f45b0adfdd446f0266015de8ab63421d4a882857d46a1ba575f",
+    "posted_at": "2026-10-17T18:45:32.531194+00:00",
+    "instagram_response": {
+      "creation_id": "18110308643097008",
+      "media_type": "image",
+      "account": "teddyapps82",
+      "staging_photo_id": "122115792909487112",
+      "instagram_media_id": "18642897187026874",
+      "success": true,
+      "published": true,
+      "platform": "instagram",
+      "media_id": "billeder/workflows/Codex-billede 18. sep. 2026, 00.21.45.png",
+      "run_id": "instagram-103"
+    }
+  },
+  {
     "run_id": "instagram-102",
     "post_id": "app-02",
     "category": "custom-bc-apps",

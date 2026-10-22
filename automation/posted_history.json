@@ -1,5 +1,43 @@
 [
   {
+    "run_id": "facebook-112",
+    "post_id": "int-01",
+    "category": "integrationer",
+    "media_id": "billeder/integrationer/08f87264-48c5-491b-b733-db176edd0318.png",
+    "media_path": "/Users/teddy/teddy-apps/billeder/integrationer/08f87264-48c5-491b-b733-db176edd0318.png",
+    "media_type": "image",
+    "sha256": "5183e088c8a4aab0809be03a0ac456a8713cebbc010dde8adfe6bad66d60b7bb",
+    "posted_at": "2026-10-21T12:30:32.411821+00:00",
+    "facebook_response": {
+      "post_id": "1310521282144790_122116943019487112",
+      "media_type": "image",
+      "success": true,
+      "published": true,
+      "platform": "facebook",
+      "media_id": "billeder/integrationer/08f87264-48c5-491b-b733-db176edd0318.png",
+      "run_id": "facebook-112"
+    }
+  },
+  {
+    "run_id": "facebook-106",
+    "post_id": "flow-01",
+    "category": "workflows",
+    "media_id": "billeder/workflows/Codex-billede 18. sep. 2026, 00.21.45.png",
+    "media_path": "/Users/teddy/teddy-apps/billeder/workflows/Codex-billede 18. sep. 2026, 00.21.45.png",
+    "media_type": "image",
+    "sha256": "0afdfd64bb157f45b0adfdd446f0266015de8ab63421d4a882857d46a1ba575f",
+    "posted_at": "2026-10-19T12:30:34.462073+00:00",
+    "facebook_response": {
+      "post_id": "1310521282144790_122116276881487112",
+      "media_type": "image",
+      "success": true,
+      "published": true,
+      "platform": "facebook",
+      "media_id": "billeder/workflows/Codex-billede 18. sep. 2026, 00.21.45.png",
+      "run_id": "facebook-106"
+    }
+  },
+  {
     "run_id": "facebook-101",
     "post_id": "auto-01",
     "category": "automatisering",

@@ -1,5 +1,26 @@
 [
   {
+    "run_id": "linkedin-115",
+    "post_id": "app-02",
+    "category": "custom-bc-apps",
+    "media_id": "billeder/custom-bc-apps/Codex-billede 18. sep. 2026, 00.08.33.png",
+    "media_path": "/Users/teddy/teddy-apps/billeder/custom-bc-apps/Codex-billede 18. sep. 2026, 00.08.33.png",
+    "media_type": "image",
+    "sha256": "68b8f2ce2a5d77ca6a620f0489fddd8adf6d3ff16b0d01c94f2088d1c4bad64d",
+    "posted_at": "2026-11-05T14:30:33.654178+00:00",
+    "linkedin_response": {
+      "asset": "urn:li:digitalmediaAsset:D4E22AQFTnwTC_arXfg",
+      "author": "urn:li:person:aneDsUK-iD",
+      "media_type": "image",
+      "post_urn": "urn:li:share:7524115946731622403",
+      "success": true,
+      "published": true,
+      "platform": "linkedin",
+      "media_id": "billeder/custom-bc-apps/Codex-billede 18. sep. 2026, 00.08.33.png",
+      "run_id": "linkedin-115"
+    }
+  },
+  {
     "run_id": "linkedin-109",
     "post_id": "int-02",
     "category": "integrationer",

@@ -50,6 +50,7 @@
     "bc-apps",
     "php-web",
     "integrationer",
-    "bc-apps"
+    "bc-apps",
+    "php-web"
   ]
 }

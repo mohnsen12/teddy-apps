@@ -1,5 +1,49 @@
 [
   {
+    "run_id": "instagram-149",
+    "post_id": "int-02",
+    "category": "integrationer",
+    "media_id": "billeder/integrationer/08f87264-48c5-491b-b733-db176edd0318.png",
+    "media_path": "/Users/teddy/teddy-apps/billeder/integrationer/08f87264-48c5-491b-b733-db176edd0318.png",
+    "media_type": "image",
+    "sha256": "5183e088c8a4aab0809be03a0ac456a8713cebbc010dde8adfe6bad66d60b7bb",
+    "posted_at": "2026-11-20T19:45:32.345196+00:00",
+    "instagram_response": {
+      "creation_id": "18118706525097008",
+      "media_type": "image",
+      "account": "teddyapps82",
+      "staging_photo_id": "122125965135487112",
+      "instagram_media_id": "18352011739253757",
+      "success": true,
+      "published": true,
+      "platform": "instagram",
+      "media_id": "billeder/integrationer/08f87264-48c5-491b-b733-db176edd0318.png",
+      "run_id": "instagram-149"
+    }
+  },
+  {
+    "run_id": "instagram-146",
+    "post_id": "auto-01",
+    "category": "automatisering",
+    "media_id": "billeder/automatisering/0d54238e-e71c-4103-a341-8e2a6f683a5c.png",
+    "media_path": "/Users/teddy/teddy-apps/billeder/automatisering/0d54238e-e71c-4103-a341-8e2a6f683a5c.png",
+    "media_type": "image",
+    "sha256": "a5922d1ffa80ff88c5b8ef8c4f4f5d8a08a2c6de65860a048ac4032cdb54f7fa",
+    "posted_at": "2026-11-19T19:45:27.772451+00:00",
+    "instagram_response": {
+      "creation_id": "18118518902097008",
+      "media_type": "image",
+      "account": "teddyapps82",
+      "staging_photo_id": "122125646349487112",
+      "instagram_media_id": "18093408632697647",
+      "success": true,
+      "published": true,
+      "platform": "instagram",
+      "media_id": "billeder/automatisering/0d54238e-e71c-4103-a341-8e2a6f683a5c.png",
+      "run_id": "instagram-146"
+    }
+  },
+  {
     "run_id": "instagram-143",
     "post_id": "app-02",
     "category": "custom-bc-apps",
